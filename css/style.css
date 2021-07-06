@@ -1,69 +1,74 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 #calculator {
-    width: 400px;
-    height: 500px;
-    margin: 100px auto;
-    background-color: #9dc9da;
-    padding: 20px;
-    font-size: 35px;
-    font-weight: 500;
+  width: 400px;
+  height: 500px;
+  margin: 100px auto;
+  background-color: #9dc9da;
+  padding: 20px;
 }
 
 #display {
-    height: 120px;
-    color: white;
-    background-color: black;
-    border-radius: 10px 10px 0 0;
-    font-size: 50px;
-    padding: 0px 30px;
-    text-align: right;
-    overflow: auto;
-    line-height: 120px;
+  height: 120px;
+  color: white;
+  background-color: black;
+  border-radius: 10px 10px 0 0;
+  font-size: 50px;
+  padding: 0px 30px;
+  text-align: right;
+  overflow: auto;
+  line-height: 120px;
 }
 
 #digits-container {
-    height: 380px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+  height: 380px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1px;
 }
 
-.arithmetic-signs, #equal-sign, .digits {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #9dc9da;
+#digits-container button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: none;
+  outline: none;
 }
 
-.arithmetic-signs {
-    background-color: lightgray;
+.arithmetic-operators {
+  background-color: lightgray;
 }
 
-#equal-sign {
-    grid-row: 2 / span 4;
-    grid-column: 4;
-    background-color: salmon;
-    border-radius: 0 0 10px 0;
+#equal {
+  grid-row: 2 / span 4;
+  grid-column: 4;
+  background-color: rgba(250, 128, 114);
+  border-radius: 0 0 10px 0;
 }
 
 .digits {
-    background-color: whitesmoke;
+  background-color: whitesmoke;
 }
 
-#zero {
-    border-radius: 0 0 0 10px;
+#dot {
+  border-radius: 0 0 0 10px;
 }
 
-.arithmetic-signs:hover, .digits:hover {
-    background-color: grey;
+.arithmetic-operators:hover,
+.digits:hover {
+  background-color: grey;
+}
+
+#equal:hover {
+  background-color: rgba(221, 43, 23, 0.8);
 }
 
 @media (max-width: 440px) {
-    #calculator {
-        width: 90%;
-        padding: 5%;
-    }
+  #calculator {
+    width: 90%;
+    padding: 5%;
+  }
 }

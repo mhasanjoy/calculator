@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
+  <body>
     <div id="calculator">
-        <div id="display">0</div>
+      <div id="display">0</div>
 
-        <div id="digits-container">
-            <div class="arithmetic-signs">+</div>
-            <div class="arithmetic-signs">-</div>
-            <div class="arithmetic-signs">*</div>
-            <div class="arithmetic-signs">/</div>
-            <div id="equal-sign">=</div>
-            <div class="digits">9</div>
-            <div class="digits">8</div>
-            <div class="digits">7</div>
-            <div class="digits">6</div>
-            <div class="digits">5</div>
-            <div class="digits">4</div>
-            <div class="digits">3</div>
-            <div class="digits">2</div>
-            <div class="digits">1</div>
-            <div id="zero" class="digits">0</div>
-            <div class="digits">.</div>
-            <div class="digits">AC</div>
-        </div>
+      <div id="digits-container">
+        <button class="arithmetic-operators">+</button>
+        <button class="arithmetic-operators">-</button>
+        <button class="arithmetic-operators">×</button>
+        <button class="arithmetic-operators">÷</button>
+        <button id="equal">=</button>
+        <button class="digits">9</button>
+        <button class="digits">8</button>
+        <button class="digits">7</button>
+        <button class="digits">6</button>
+        <button class="digits">5</button>
+        <button class="digits">4</button>
+        <button class="digits">3</button>
+        <button class="digits">2</button>
+        <button class="digits">1</button>
+        <button id="dot" class="digits">.</button>
+        <button class="digits">0</button>
+        <button class="digits">AC</button>
+      </div>
     </div>
 
     <script src="js/script.js"></script>
-</body>
-
+  </body>
 </html>
