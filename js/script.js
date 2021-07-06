@@ -141,7 +141,7 @@ document
     if (
       displayEquation.indexOf("e") < 0 &&
       displayEquation.indexOf("Infinity") < 0 &&
-      displayEquation !== "NaN"
+      displayEquation.indexOf("NaN") < 0
     ) {
       if (digit === "AC") {
         display.innerText = "0";
